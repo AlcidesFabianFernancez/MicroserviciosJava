@@ -3,5 +3,5 @@ spring:
         name: car-service
     cloud:
         config:
-            enable: true
-            url: http://localhost:9090
+            enabled: true
+            uri: http://localhost:9090
