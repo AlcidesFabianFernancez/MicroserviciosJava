@@ -1,0 +1,7 @@
+spring:
+    application:
+        name: user-service
+    cloud:
+        config:
+            enable: true
+            url: http://localhost:9090
