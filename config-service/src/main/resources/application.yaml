@@ -7,6 +7,6 @@ spring:
                 git:
                     default-label: main
                     uri: https://github.com/AlcidesFabianFernancez/MicroserviciosJava
-                    searcch-paths: config-data
+                    search-paths: config-data
     application: 
         name: config-service
