@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.tutorial.models.Bike;
 
-@FeignClient(name = "bike-service", url= "http://localhost:8093")
+@FeignClient(name = "bike-service")
 public interface BikeFeignClient {
     
     /*
@@ -23,6 +23,6 @@ public interface BikeFeignClient {
     /*
      * Extraemos los bike por id_usuario
      */
-    @RequestMapping(method = RequestMethod.GET, value ="/byuser/{userid}")
+    @RequestMapping(method = RequestMethod.GET, value ="/bike/byuser/{userid}")
     List<Bike> getBikes(@PathVariable("userid") int userid);
 }

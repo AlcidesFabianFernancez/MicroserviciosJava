@@ -24,6 +24,6 @@ public interface CarFeignClient {
     /*
      * Extraer bikes por id_usuario
      */
-    @RequestMapping(method = RequestMethod.GET, value = "/byuser/{userid}")
+    @RequestMapping(method = RequestMethod.GET, value = "/car/byuser/{userid}")
     List<Car> getCars(@PathVariable("userid") int userid);
 }
